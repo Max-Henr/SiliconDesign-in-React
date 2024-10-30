@@ -1,0 +1,69 @@
+.transfer {
+  display: none;
+}
+.transfer-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+.checklist {
+  grid-column: 2/6;
+  grid-row: 2/6;
+}
+.sendmoney {
+  grid-column: 7/13;
+  grid-row: 1/5;
+}
+.contact-img {
+  grid-column: 2/6;
+  grid-row: 5/12;
+}
+.payment {
+  grid-column: 7/12;
+  grid-row: 6/12;
+}
+ul {
+  margin-top: 2rem;
+  padding-left: 12px;
+}
+
+ul .transfer-list {
+  padding-left: 1rem;
+  line-height: 30px;
+  color: var(--clr-text);
+}
+
+.transfer-list::marker {
+  content: "\2714";
+  color: var(--clr-primary);
+}
+.payment-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 0, 1fr);
+  row-gap: 1rem;
+  margin-top: 1rem;
+}
+.payment-text {
+  grid-column: 1/4;
+  p {
+    margin-top: 1rem;
+  }
+}
+.cashback-text {
+  grid-column: 4/7;
+  p {
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .transfer {
+    display: block;
+  }
+  #learn-more {
+    display: flex;
+    margin-top: 2rem;
+    width: 190px;
+    i {
+      margin-left: 1rem;
+    }
+  }
+}

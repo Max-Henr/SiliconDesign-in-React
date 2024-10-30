@@ -1,0 +1,12 @@
+body {
+  font-family: "Manrope", sans-serif;
+  h1,
+  h2,
+  h3 {
+    font-weight: 800;
+    color: var(--clr-header);
+  }
+  p {
+    color: var(--clr-text);
+  }
+}

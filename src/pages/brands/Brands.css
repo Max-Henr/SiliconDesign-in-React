@@ -1,0 +1,36 @@
+#brands {
+  display: none;
+}
+.brand-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-box {
+  border: 1px solid var(--clr-gray500);
+  border-radius: 8px;
+  height: 100px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  #brands {
+    display: block;
+  }
+  #brand-5,
+  #brand-6 {
+    display: none;
+  }
+}
+@media (min-width: 1400px) {
+  .brand-box {
+    width: 200px;
+  }
+  #brand-5,
+  #brand-6 {
+    display: flex;
+  }
+}

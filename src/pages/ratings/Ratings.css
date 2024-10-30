@@ -1,0 +1,17 @@
+.ratings {
+  background-color: var(--clr-gray100);
+  display: none;
+}
+.ratings-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media (min-width: 1400px) {
+  .ratings {
+    display: block;
+  }
+}

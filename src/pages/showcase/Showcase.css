@@ -1,0 +1,152 @@
+.page-1 {
+  background: radial-gradient(
+    circle at center bottom,
+    rgba(99, 101, 241, 0.1) 0%,
+    rgb(218, 70, 239, 0.05) 42%,
+    rgb(241, 244, 253, 0.07) 83%
+  );
+}
+.showcase {
+  h1 {
+    line-height: 44.4px;
+    font-size: 34.1px;
+    padding-top: 1rem;
+  }
+}
+.info {
+  line-height: 28.8px;
+  font-size: 18px;
+  text-shadow: 0 4px 3px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.showcase-grid {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+.btn-store-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.btn-store {
+  border: none;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  padding: 8px;
+  background-color: var(--clr-header);
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 8px;
+    color: var(--clr-white);
+    text-align: start;
+    letter-spacing: 0.5px;
+    span {
+      letter-spacing: 0;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+}
+.fa-apple {
+  color: var(--clr-white);
+  font-size: 30px;
+}
+.discovermore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.btn-discovermore {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 1.75rem;
+  border: none;
+  background-color: var(--clr-white);
+  transform: rotate(180deg);
+}
+.img-showcase {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .showcase-grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+  .showcase {
+    h1 {
+      grid-column: 1/12;
+    }
+  }
+  .info {
+    grid-column: 1/6;
+    grid-row: 7/8;
+    text-align: left;
+    text-shadow: none;
+  }
+  .btn-store-box {
+    grid-column: 1/6;
+    grid-row: 8/9;
+    flex-direction: row;
+  }
+  .btn-store {
+    position: relative;
+    justify-content: start;
+    p {
+      position: absolute;
+      left: 40px;
+      padding-right: 5px;
+    }
+  }
+  .discovermore {
+    grid-column: 1/5;
+    grid-row: 9/10;
+    justify-content: start;
+  }
+  .img-showcase {
+    display: block;
+    grid-row: 4/12;
+    grid-column: 5/12;
+  }
+}
+@media (min-width: 1400px) {
+  .showcase {
+    h1 {
+      grid-column: 1/6;
+      grid-row: 2/3;
+      text-align: left;
+    }
+  }
+  .info {
+    grid-row: 3/4;
+  }
+  .btn-store-box {
+    grid-column: 1/5;
+    grid-row: 4/5;
+  }
+  .btn-store {
+    justify-content: center;
+    p {
+      position: unset;
+    }
+  }
+  .discovermore {
+    grid-row: 10/11;
+  }
+  .img-showcase {
+    grid-row: 1/12;
+    grid-column: 7/13;
+    img {
+      width: 100%;
+    }
+  }
+}

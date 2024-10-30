@@ -1,0 +1,26 @@
+.breadcrumb {
+  display: flex;
+  gap: 1rem;
+}
+.breadcrumb-list {
+  color: var(--clr-header);
+  all: unset;
+}
+.breadcrumb-current {
+  color: var(--clr-primary);
+}
+.breadcrumb-home::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f015";
+  margin-right: 4px;
+  padding: 1rem;
+}
+.breadcrumb-current::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f101";
+  margin-right: 4px;
+  padding-right: 1rem;
+  color: var(--clr-header);
+}

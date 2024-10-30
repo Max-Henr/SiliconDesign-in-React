@@ -1,0 +1,94 @@
+.contact {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.btn-contact {
+  background-color: var(--clr-primary);
+  color: white;
+  width: 162px;
+  height: 50px;
+  padding: 12px 25px;
+  border-radius: 8px;
+  span {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+.newsletter {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  background-color: var(--clr-gray100);
+  padding: 3rem 0.5rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  h2 {
+    font-size: 21.6px;
+    line-height: 30.2px;
+  }
+}
+.newsletter-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  grid-column: 1/9;
+}
+.sub-desktop {
+  display: none;
+}
+.form-email {
+  grid-column: 1/9;
+}
+.form-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  i {
+    position: absolute;
+    left: 0;
+    padding-left: 1rem;
+  }
+}
+.email-input {
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 52px;
+  padding-left: 2.5rem;
+  background-color: white;
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px var(--clr-primary);
+  }
+}
+
+.btn-subscribe {
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+  width: 115px;
+  height: 52px;
+  background-color: var(--clr-primary);
+  color: white;
+}
+@media (min-width: 768px) {
+  .contact {
+    display: none;
+  }
+  .newsletter-text {
+    grid-column: 1/5;
+  }
+  .form-email {
+    grid-column: 5/9;
+  }
+}
+@media (min-width: 1400px) {
+  .sub-reg {
+    display: none;
+  }
+  .sub-desktop {
+    display: flex;
+  }
+}

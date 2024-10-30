@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import "./abstract/Colors.css";
+@import "./base/Reset.css";
+@import "./abstract/Typography.css";
+
+
+.container {
+  width: 100%;
+  margin: 2.5rem auto;
+  height: fit-content;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
