@@ -1,0 +1,21 @@
+.contact-card {
+  margin-top: 2rem;
+  background-color: var(--clr-white);
+  border-radius: 10px;
+  box-shadow: 2px 2px 9px var(--clr-boxshadow);
+}
+@media (min-width:768px){
+  .contact-card{
+    height: 500px;
+  }
+}
+@media (min-width: 1400px) {
+  .contact-card {
+    width: 600px;
+    height: 700px;
+    position: absolute;
+    top: 10%;
+    right: 22%;
+    
+  }
+}

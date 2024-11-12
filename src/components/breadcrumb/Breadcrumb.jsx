@@ -5,7 +5,7 @@ function Breadcrumb() {
   const location = useLocation();
   const pathNames = location.pathname.split("/").filter((x) => x);
   return (
-    <div className="container">
+    <div className="grid-breadcrumb">
       <ul className="breadcrumb">
         <li className="breadcrumb-list breadcrumb-home">
           <Link to="/">Home</Link>
@@ -15,9 +15,11 @@ function Breadcrumb() {
 
           return (
             <li className="breadcrumb-list breadcrumb-current" key={to}>
-              {index === pathNames.length - 1 
-                ? (<span>{value.replace(/-/g, " ")}</span>) 
-                : (<NavLink to={to}>{value.replace(/-/g, " ")}</NavLink>)}
+              {index === pathNames.length - 1 ? (
+                <span>{value.replace(/-/g, " ")}</span>
+              ) : (
+                <Link to={to}>{value.replace(/-/g, " ")}</Link>
+              )}
             </li>
           );
         })}

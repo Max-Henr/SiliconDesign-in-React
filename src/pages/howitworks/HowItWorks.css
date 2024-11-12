@@ -1,5 +1,6 @@
 .page-3 {
   background-color: var(--clr-gray100);
+  padding-top: 3rem;
 }
 .how-it-works-grid {
   text-align: center;

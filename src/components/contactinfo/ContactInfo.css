@@ -1,0 +1,43 @@
+.contact-info {
+  margin-bottom: 3rem;
+}
+.location::before,
+.contact-number::before,
+.opening-hours::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: var(--clr-primary);
+  margin-right: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+.location::before {
+  content: "\f3c5";
+}
+.contact-number::before {
+  content: "\f2a0";
+  rotate: -45deg;
+}
+.opening-hours::before {
+  content: "\f017";
+  align-self: start;
+}
+.ul-contact {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.ul-contact li {
+  display: flex;
+  align-items: center;
+}
+.opening-hours {
+  display: flex;
+  p {
+    color: var(--clr-header);
+  }
+  span {
+    font-weight: 600;
+  }
+}

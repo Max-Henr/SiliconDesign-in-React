@@ -1,5 +1,6 @@
 .transfer {
   display: none;
+  margin-top: 3rem;
 }
 .transfer-grid {
   display: grid;

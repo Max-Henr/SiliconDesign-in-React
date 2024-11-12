@@ -1,5 +1,6 @@
 #brands {
   display: none;
+  margin-top: 3rem;
 }
 .brand-flex {
   display: flex;

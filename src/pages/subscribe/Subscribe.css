@@ -47,6 +47,7 @@
     position: absolute;
     left: 0;
     padding-left: 1rem;
+    color: black;
   }
 }
 .email-input {
@@ -56,6 +57,7 @@
   height: 52px;
   padding-left: 2.5rem;
   background-color: white;
+  color: black;
   &:focus {
     outline: none;
     box-shadow: 0 0 5px var(--clr-primary);
@@ -91,4 +93,14 @@
   .sub-desktop {
     display: flex;
   }
+}
+.form-flex {
+  display: flex;
+  flex-direction: column;
+}
+.error-message {
+  color: red;
+  /* position: absolute;
+  bottom: -50%;
+  left: 7%; */
 }

@@ -10,23 +10,8 @@ import Subscribe from "./pages/subscribe/Subscribe";
 import { useState, useEffect } from "react";
 
 function Home({ toggleDarkMode }) {
-  // const [darkMode, setDarkmode] = useState(false);
-
-  // const toggleDarkMode = () => {
-  //   setDarkmode((toggle) => !toggle);
-  // };
-
-  // useEffect(() => {
-  //   if (darkMode) {
-  //     document.documentElement.classList.add("dark");
-  //   } else {
-  //     document.documentElement.classList.remove("dark");
-  //   }
-  // }, [darkMode]);
-
   return (
     <>
-      {/* <NavBar toggleDarkMode={toggleDarkMode} /> */}
       <Showcase />
       <Brands />
       <Features />

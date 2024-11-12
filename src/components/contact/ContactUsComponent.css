@@ -1,0 +1,48 @@
+.contact-component-flex {
+  display: flex;
+  gap: 2rem;
+  grid-column: 1/12;
+  padding-left: 1rem;
+}
+.email {
+  grid-row: 4/6;
+}
+.careers {
+  grid-row: 6/8;
+  margin-bottom: 5rem;
+}
+.contact-component-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-component-icon {
+  background-color: var(--clr-white);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+
+  i {
+    color: var(--clr-primary);
+    font-size: 20px;
+  }
+}
+.contact-btn {
+  color: var(--clr-primary);
+  font-weight: 600;
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+@media (min-width: 1400px){
+  .contact-component-flex{
+    grid-column: 1/5;
+  }
+  .careers {
+    margin-bottom: 10rem;
+  }
+}

@@ -20,6 +20,7 @@
   --clr-success: #22c55e;
   --clr-boxshadow: rgb(128, 126, 126);
   --clr-bg: #fff;
+  --clr-link: #fff;
 }
 html {
   color-scheme: light;

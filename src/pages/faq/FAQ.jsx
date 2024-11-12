@@ -1,5 +1,6 @@
 import "./FAQ.css";
 import Accordion from "../../components/accordion/Accordions";
+import { NavLink } from "react-router-dom";
 
 function FAQ() {
   return (
@@ -19,12 +20,12 @@ function FAQ() {
             <div id="contact-phone" className="contact-box">
               <i className="fa-solid fa-phone-volume"></i>
               <p>Still have quenstions?</p>
-              <a href="#">Contact us</a>
+              <NavLink to="./contact">Contact Us</NavLink>
             </div>
             <div id="contact-message" className="contact-box">
               <i className="fa-solid fa-comment-dots"></i>
               <p>Still have quenstions?</p>
-              <a href="#">Contact us</a>
+              <NavLink to="./contact">Contact Us</NavLink>
             </div>
           </div>
         </div>
