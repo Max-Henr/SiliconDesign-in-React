@@ -59,7 +59,8 @@ ul .transfer-list {
   .transfer {
     display: block;
   }
-  #learn-more {
+  .learn-more-btn {
+    all: unset;
     display: flex;
     margin-top: 2rem;
     width: 190px;

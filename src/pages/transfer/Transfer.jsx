@@ -16,15 +16,21 @@ function Transfer() {
               transfer simple and clear
             </h2>
             <ul>
-              <li className="transfer-list">Banking transactions are free for you</li>
+              <li className="transfer-list">
+                Banking transactions are free for you
+              </li>
               <li className="transfer-list">No monthly cash commission</li>
-              <li className="transfer-list">Manage payments and transactions online</li>
+              <li className="transfer-list">
+                Manage payments and transactions online
+              </li>
             </ul>
-            <PrimaryButton
-              btnText="Learn More"
-              btnIcon="fa-solid fa-arrow-right"
-              customClass="row-reverse"
-            />
+            <button className="learn-more-btn">
+              <PrimaryButton
+                btnText="Learn More"
+                btnIcon="fa-solid fa-arrow-right"
+                customClass="row-reverse"
+              />
+            </button>
           </div>
           <div className="sendmoney">
             <img
@@ -61,11 +67,13 @@ function Transfer() {
                 </p>
               </div>
             </div>
-            <PrimaryButton
-              btnText="Learn More"
-              btnIcon="fa-solid fa-arrow-right"
-              customClass="row-reverse"
-            />
+            <button className="learn-more-btn">
+              <PrimaryButton
+                btnText="Learn More"
+                btnIcon="fa-solid fa-arrow-right"
+                customClass="row-reverse"
+              />
+            </button>
           </div>
         </div>
       </div>

@@ -22,10 +22,18 @@ function ContactLocation() {
           />
         </div>
         <div className="social-media">
-            <a className="socials" href="/"><i class="fa-brands fa-facebook"></i></a>
-            <a className="socials" href="/"><i class="fa-brands fa-twitter"></i></a>
-            <a className="socials" href="/"><i class="fa-brands fa-instagram"></i></a>
-            <a className="socials" href="/"><i class="fa-brands fa-youtube"></i></a>
+          <a className="socials" href="/">
+            <i className="fa-brands fa-facebook"></i>
+          </a>
+          <a className="socials" href="/">
+            <i className="fa-brands fa-twitter"></i>
+          </a>
+          <a className="socials" href="/">
+            <i className="fa-brands fa-instagram"></i>
+          </a>
+          <a className="socials" href="/">
+            <i className="fa-brands fa-youtube"></i>
+          </a>
         </div>
       </div>
     </div>

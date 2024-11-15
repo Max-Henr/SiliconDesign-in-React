@@ -5,7 +5,13 @@ import PrimaryButton from "../buttons/primarybutton/PrimaryButton";
 function ConsultationForm() {
   const [options, setOptions] = useState([
     { id: 1, text: "finacial consultation" },
-    { id: 2, text: "help me please" },
+    {
+      id: 2,
+      text: "Money Help",
+    },
+    { id: 3, text: "Give me more money" },
+    { id: 4, text: "I dont have money" },
+    { id: 5, text: "this is a robbery" },
   ]);
   const [formData, setFormData] = useState({
     fullName: "",
@@ -52,7 +58,7 @@ function ConsultationForm() {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     if (validateForm()) {
       console.log("Form is valid");
       try {
@@ -64,6 +70,7 @@ function ConsultationForm() {
             body: JSON.stringify(formData),
           }
         );
+        console.log(response);
         if (response.ok) {
           const submitionOk = "Successfully submitted";
           setSubmitted(submitionOk);
@@ -94,6 +101,7 @@ function ConsultationForm() {
           <input
             type="text"
             name="fullName"
+            id="fullname"
             value={formData.fullName}
             onChange={handleChange}
             required
@@ -107,6 +115,8 @@ function ConsultationForm() {
           <input
             type="email"
             name="email"
+            id="email"
+            autoComplete="on"
             value={formData.email}
             onChange={handleChange}
             required
@@ -116,7 +126,7 @@ function ConsultationForm() {
           )}
         </div>
         <div className="form-group">
-          <label htmlFor="specialist">Specialist</label>
+          <label htmlFor="customSelect">Specialist</label>
           <select
             name="specialist"
             id="customSelect"
